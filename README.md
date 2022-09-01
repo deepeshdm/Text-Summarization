@@ -15,10 +15,8 @@ cd Text-Summarization
 pip install -r requirements.txt
 ```
 
-3. Extract the 'Tesseract-OCR' from below link into our project directory
-```
+3. Extract the 'Tesseract-OCR' from link into our project directory :
 https://github.com/UB-Mannheim/tesseract/wiki
-```
 
 4. Execute the "main.py" using streamlit
 ```
