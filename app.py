@@ -116,3 +116,19 @@ elif task == 'Text Extraction':
                 else:
                     st.write(
                         "No Text was discovered inside the given Image ! Try another one.")
+                         
+# hide the watermark
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)                        
+                
+          
+                
+                
+                
+                
+                
