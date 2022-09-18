@@ -49,7 +49,7 @@ if task == "Text Summarization":
         button = st.button("SUMMARIZE")
 
     with st.spinner("Generating Summary...please wait"):
-        if button and sentence:
+        if button and len(sentence.split()) > 50:
             print("Generating chunks...")
             chunks = generate_chunks(sentence, chunk_size)
             print("Summarizing Text now...")
@@ -63,6 +63,9 @@ if task == "Text Summarization":
             col1, col2, col3 = st.columns(3)
             with col2:
                 st.write("Total words : ", len(text.split()))
+        
+        elif len(sentence.split()) < 50:
+            st.warning("Input Text must contain atleast 50 words !")
 
 
 # -------------------------------------------------------------------------
